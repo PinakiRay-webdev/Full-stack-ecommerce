@@ -4,16 +4,16 @@ import { CiShoppingCart } from "react-icons/ci";
 import { FaBars } from "react-icons/fa";
 
 const Header = () => {
-  const [headerBG, setHeaderBG] = useState("bg-black");
+  const [headerBG, setHeaderBG] = useState("bg-gradient-to-r from-[#8e2de2] to-[#4a00e0]");
 
   const handleScroll = () => {
     const scrollPos = window.scrollY;
 
     
     if (scrollPos > 200) {
-      setHeaderBG("bg-red-500");
-    } else {
       setHeaderBG("bg-black");
+    } else {
+      setHeaderBG("bg-gradient-to-r from-[#8e2de2] to-[#4a00e0]");
     }
   };
 
@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <header
-      className={`text-white h-14 px-6 sm:px-8 md:px-16 lg:px-26 flex justify-between items-center w-full fixed top-0 ${headerBG} transition ease-in-out duration-200`}
+      className={`text-white h-[10vh] px-6 sm:px-8 md:px-16 lg:px-44 flex justify-between items-center w-full sticky top-0 ${headerBG} transition ease-in-out duration-200 z-10`}
     >
       <nav
         id="left"
