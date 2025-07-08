@@ -37,16 +37,16 @@ const Header = () => {
         ))}
       </nav>
 
-      <section className="flex items-center gap-1">
-        <i className="block sm:hidden text-xl">
+      <section className="flex items-center gap-2">
+        <p className="block sm:hidden text-xl">
           <FaBars />
-        </i>
+        </p>
         <h1 className="text-white text-2xl uppercase font-bold">brand</h1>
       </section>
 
       <nav
         id="right"
-        className="flex items-center justify-center gap-8 min-w-[12rem] w-[14rem]"
+        className="flex items-center justify-end sm:justify-center gap-8 min-w-[12rem] w-[14rem]"
       >
         {navIcons?.map((Icon, id) => (
           <p className="text-white text-xl cursor-pointer relative" key={id}>
