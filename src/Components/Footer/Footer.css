@@ -1,0 +1,12 @@
+.footer p{
+    color: rgb(114, 114, 114);
+    font-size: 0.9em;
+    margin: 0.5em 0px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer p:hover{
+    color: black;
+}
